@@ -96,6 +96,11 @@ body::-webkit-scrollbar-thumb {
 .header.sticky  .nav-title{
     color: #fff;
 }
+.header.sticky .menu .menu-link:hover, .menu .menu-link:focus{
+    box-shadow: 0 -4px 0px #fff inset,
+    500px 0 0 rgba(255,255,255,0.03) inset;
+padding: 10px 7px 10px 7px;
+}
 .menu{
     display: flex;
     align-items: center;
@@ -117,7 +122,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .menu .menu-link:hover, .menu .menu-link:focus{
-    box-shadow: 0 -4px 0px #fff inset,
+    box-shadow: 0 -4px 0px #333 inset,
                 500px 0 0 rgba(255,255,255,0.03) inset;
   padding: 10px 7px 10px 7px;
 }
@@ -605,22 +610,23 @@ body::-webkit-scrollbar-thumb {
    justify-content: center; 
    background-size: cover;     
    border-radius: 50px; 
+   position: relative;
 }
 
 .swiper-slide:nth-child(1){
-    background-image: url('../img/coding-bg.png');
+    background-image: url('../img/Screenshot_1.png');
     background-position: center center;
     background-size: cover;
 }
 
 .swiper-slide:nth-child(2){
-    background-image: url('../img/coding4.jpg');
+    background-image: url('../img/Screenshot_2.png');
     background-position: center center;
     background-size: cover;
 }
 
 .swiper-slide:nth-child(3){
-    background-image: url('../img/coding5.jpg');
+    background-image: url('../img/Screenshot_3.png');
     background-position: center center;
     background-size: cover;
 }
@@ -629,6 +635,27 @@ body::-webkit-scrollbar-thumb {
     background-image: url('../img/coding-bg.png');
     background-position: center center;
     background-size: cover;
+}
+.swiper-box{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background: #fff;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    border: 2px solid ;
+    border-bottom: none;
+}
+.swiper-link {
+    color: #0328fc;
+    cursor: pointer;
+    border: 2px solid #0328fc;
+    padding: 5px;
+    border-radius: 10px;
+}
+.swiper-box > p {
+   margin: 20px 0;
 }
 /* Slider css coding and */
 
