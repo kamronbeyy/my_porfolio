@@ -107,7 +107,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .menu .menu-link{
-    color: #fff;
+    color: #333;
     display: block;
     padding: 10px 7px;
     font-size: 17px;
