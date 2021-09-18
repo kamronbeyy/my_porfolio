@@ -106,7 +106,7 @@
             <h2 class="skills-title">Skills</h2>
             <div class="skills-box">
                 <ul class="skills-list">
-                    <li class="skills-item">
+                    <li data-aos="flip-left" data-aos-duration="1300" class="skills-item">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -128,7 +128,7 @@
                         </div>
                        </div>
                     </li>
-                    <li class="skills-item">
+                    <li  data-aos="zoom-in" data-aos-duration="2000" class="skills-item">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -150,7 +150,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="skills-item">
+                    <li data-aos="flip-right" data-aos-duration="1000" class="skills-item">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -169,7 +169,7 @@
                             </div>
                            </div>
                     </li>
-                    <li class="skills-item">
+                    <li data-aos="flip-left" data-aos-duration="1300" class="skills-item">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -191,7 +191,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="skills-item">
+                    <li data-aos="zoom-in" data-aos-duration="2000" class="skills-item">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -207,7 +207,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="skills-item">
+                    <li data-aos="flip-right" data-aos-duration="1000" class="skills-item">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -237,7 +237,7 @@
         <div class="container">
             <h2 class="portfolio-title">Portfolio</h2>
             <div class="swiper-container">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper" data-aos="zoom-in-down" data-aos-duration="2000">
                     <div class="swiper-slide">
                         <div class="swiper-box">
                             <h3>Movies</h3>
@@ -261,9 +261,16 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-box">
-                            <h3>Movies</h3>
-                            <p>Technologies: HTML, CSS, JS, Aos.js, Swiper.js, API</p>
-                            <a class="swiper-link" href="https://movies-com.netlify.app/">Watch project</a>
+                            <h3>KBM-Movies</h3>
+                            <p>Technologies: Html, CSS, JavaScripy, SCSS, API, JS-libry. Collective Project</p>
+                            <a class="swiper-link" href="https://kbm-movies-project.netlify.app/">Watch project</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-box">
+                            <h3>KBM-Zoodmall</h3>
+                            <p>Technologies: Html, CSS,  API, JS-libry,React.js.  Collective Project</p>
+                            <a class="swiper-link" href="https://kbm-zoodmall.netlify.app/">Watch project</a>
                         </div>
                     </div>
                 </div>
@@ -278,16 +285,19 @@
         <!-- Footer Section start -->
      <footer class="footer" id="contact"> 
         <div class="container">
-            <h2 class="footer-title">Contacts</h2>
-            <p class="footer-text">Want to know more or juct chat? <br> You are welcome!</p>
-            <a href="tel: +998950023752" class="footer-link">Make to call</a>
-            <div class="typed">
+            <h2 class="footer-title" data-aos="fade-up"
+            data-aos-duration="500">Contacts</h2>
+            <p data-aos="fade-up"
+            data-aos-duration="1000" class="footer-text">Want to know more or juct chat? <br> You are welcome!</p>
+            <a data-aos="fade-up" data-aos-duration="2000" href="tel: +998950023752" class="footer-link">Make to call</a>
+            <div data-aos="fade-up"
+            data-aos-duration="2100" class="typed">
                 <h3 class="typed-title">For communication : <span class="anime"></span></h3>
             </div>
-            <div class="wrapper">
+            <div  class="wrapper">
                 <div class="icon instagram">
                     <div class="tooltip">Instagram</div>
-                    <a href="https://instagram.com/_fullstack_dev_0117"><i class="fab fa-instagram"></i></a>
+                    <a  href="https://instagram.com/_fullstack_dev_0117"><i class="fab fa-instagram"></i></a>
                 </div>
                 <div class="icon facebook">
                     <div class="tooltip">Facebook</div>
@@ -325,5 +335,8 @@
      <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
      <script src="./js/typed.js"></script>
     <script src="./js/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
