@@ -610,7 +610,7 @@ padding: 10px 7px 10px 7px;
    align-items: center;
    justify-content: center; 
    background-size: cover;     
-   border-radius: 50px; 
+   border-radius: 35px; 
    position: relative;
 }
 
@@ -644,12 +644,13 @@ padding: 10px 7px 10px 7px;
 }
 .swiper-box{
     border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    background: #fff;
+   
+    border-bottom-left-radius: 35px;
+    background: linear-gradient(#fff, #050A30);
     padding: 15px;
     position: absolute;
     bottom: 0;
-    left: 10%;
+    left: 0;
     border: 2px solid ;
     border-bottom: none;
 }
