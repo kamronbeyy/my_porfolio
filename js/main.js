@@ -7,6 +7,15 @@ window.addEventListener('scroll', e =>{
     }
  });
 /* ============= sticky header =================== */
+window.addEventListener('load', e =>{
+
+    // page loader
+    // document.querySelector('.page-loader').classList.add('fade-out');
+    // setTimeout(() => {
+        document.querySelector('.page-loader').style.display = 'none';
+    // }, 2000);
+    AOS.init();
+})
 /* Scroll animation coding */
 gsap.to("#bg", {
     scrollTrigger : {

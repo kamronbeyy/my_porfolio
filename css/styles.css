@@ -44,6 +44,7 @@ body{
     font-family: 'Otomanopee One', sans-serif;
     scrollbar-color: #d4aa70 #e4e4e4;
     scrollbar-width: thin;
+    
 }
 body::-webkit-scrollbar {
     width: 5px;
@@ -57,6 +58,62 @@ body::-webkit-scrollbar-thumb {
     background-image: linear-gradient(180deg, #086e5f 0%, #4dbbce 99%);
     box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
 }
+
+  .page-loader{
+    position: fixed;
+    overflow:hidden;
+    background-color:#D7E9F7;
+    display:flex;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000000;
+    transition: all 1s ease;
+  }
+  .page-loader span{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    opacity:0;
+    width:20px;
+    height:20px;
+    margin: 5px;
+    border-radius:50%;
+    background-color:#4B6587;
+    position:absolute;
+    animation:move 2.5s cubic-bezier(.15,.56,.74,.35) infinite;
+  }
+  
+  .page-loader span:nth-of-type(2){
+    animation-delay:0.2s;
+  }
+  
+  .page-loader span:nth-of-type(3){
+    animation-delay:0.4s;
+  }
+  
+  .page-loader span:nth-of-type(4){
+    animation-delay:0.6s;
+  }
+  
+  @keyframes move{
+    0%{
+      left:1%;
+      opacity:0;
+    }
+    20%{
+      opacity:1;
+    }
+    80%{
+      opacity:1;
+    }
+    100%{
+      left:99%;
+      opacity:0;
+    }
+  }
 .nav .container{
     display: flex;
     align-items: center;
